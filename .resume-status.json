@@ -1,0 +1,8 @@
+{
+  "outcome": "succeeded",
+  "fix_type": "transient",
+  "resume_from": "test-ui",
+  "message": "Pipeline resumed from test-ui and finished.",
+  "log": "projects/PoultryPathSprint/.resume-20261010-112423.log",
+  "attempted_at_epoch": 1791625770
+}

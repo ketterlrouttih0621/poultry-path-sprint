@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="270"
+                android:startColor="@color/dusk_top"
+                android:endColor="@color/dusk_bottom"
+                android:type="linear" />
+        </shape>
+    </item>
+    <item
+        android:drawable="@drawable/ic_hen_mark"
+        android:gravity="center"
+        android:width="96dp"
+        android:height="96dp" />
+</layer-list>

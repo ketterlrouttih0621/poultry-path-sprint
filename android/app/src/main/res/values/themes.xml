@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.PoultryPathSprint" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/pumpkin</item>
+        <item name="colorOnPrimary">@color/on_pumpkin</item>
+        <item name="colorPrimaryContainer">@color/pumpkin_light</item>
+        <item name="colorOnPrimaryContainer">@color/on_pumpkin</item>
+        <item name="colorSecondary">@color/sage</item>
+        <item name="colorOnSecondary">@color/white_soft</item>
+        <item name="colorSecondaryContainer">@color/sage_tint</item>
+        <item name="colorOnSecondaryContainer">@color/sage_deep</item>
+        <item name="colorTertiary">@color/corn</item>
+        <item name="colorOnTertiary">@color/ink</item>
+        <item name="colorSurface">@color/surface_card</item>
+        <item name="colorOnSurface">@color/ink</item>
+        <item name="colorSurfaceVariant">@color/sand_muted</item>
+        <item name="colorOnSurfaceVariant">@color/ink_soft</item>
+        <item name="colorOutline">@color/ink_faint</item>
+        <item name="colorError">@color/terracotta</item>
+        <item name="android:colorBackground">@color/cream_canvas</item>
+        <item name="android:windowBackground">@drawable/bg_launch</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="materialButtonStyle">@style/Widget.App.Button.Secondary</item>
+    </style>
+</resources>

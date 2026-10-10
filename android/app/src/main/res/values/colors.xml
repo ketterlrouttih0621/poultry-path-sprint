@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cream_canvas">#FFF9E8</color>
+    <color name="cream_deep">#F2EAD8</color>
+    <color name="sand_muted">#E8DDC4</color>
+    <color name="surface_card">#FFFFFF</color>
+    <color name="surface_sheet">#FFFCF2</color>
+    <color name="pumpkin">#F28C28</color>
+    <color name="pumpkin_deep">#D96F12</color>
+    <color name="pumpkin_light">#FFB15C</color>
+    <color name="corn">#F5D547</color>
+    <color name="corn_deep">#DDB91F</color>
+    <color name="sage">#3D9B7A</color>
+    <color name="sage_deep">#2E7A5E</color>
+    <color name="terracotta">#D97B4D</color>
+    <color name="road_slate">#4B5A66</color>
+    <color name="road_slate_deep">#3A4752</color>
+    <color name="ink">#24313D</color>
+    <color name="ink_soft">#5A6B78</color>
+    <color name="ink_faint">#8A98A3</color>
+    <color name="on_pumpkin">#2A1A08</color>
+    <color name="dawn_top">#F28C28</color>
+    <color name="dawn_mid">#F0A63A</color>
+    <color name="dawn_bottom">#F5D547</color>
+    <color name="dusk_top">#24313D</color>
+    <color name="dusk_bottom">#1A242C</color>
+    <color name="clay_shadow">#1F24313D</color>
+    <color name="scrim_ink">#8024313D</color>
+    <color name="white_soft">#FFFFFF</color>
+    <color name="white_glass">#33FFFFFF</color>
+    <color name="white_track">#55FFFFFF</color>
+    <color name="sage_tint">#1F3D9B7A</color>
+    <color name="corn_tint">#33F5D547</color>
+    <color name="ink_hairline">#1424313D</color>
+</resources>

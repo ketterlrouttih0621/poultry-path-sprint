@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/how_to_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/gutter">
+
+    <com.poultrypathsprint.arcade.core.ui.ClayPanelView
+        android:id="@+id/how_to_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:appPanelTitle="@string/dialog_how_to_title">
+
+        <LinearLayout
+            android:id="@+id/how_to_row_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/clay_inset"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/gap_s">
+
+            <ImageView
+                android:id="@+id/how_to_icon_one"
+                android:layout_width="@dimen/sprite_rule"
+                android:layout_height="@dimen/sprite_rule"
+                android:contentDescription="@string/cd_wagon"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sprite_wagon" />
+
+            <TextView
+                android:id="@+id/how_to_text_one"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/gap_s"
+                android:layout_weight="1"
+                android:text="@string/how_to_rule_one"
+                android:textAppearance="@style/TextAppearance.App.Label"
+                android:textColor="@color/ink"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/how_to_row_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap_s"
+            android:background="@drawable/clay_inset"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/gap_s">
+
+            <ImageView
+                android:id="@+id/how_to_icon_two"
+                android:layout_width="@dimen/sprite_rule"
+                android:layout_height="@dimen/sprite_rule"
+                android:contentDescription="@string/cd_train"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sprite_train" />
+
+            <TextView
+                android:id="@+id/how_to_text_two"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/gap_s"
+                android:layout_weight="1"
+                android:text="@string/how_to_rule_two"
+                android:textAppearance="@style/TextAppearance.App.Label"
+                android:textColor="@color/ink"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/how_to_row_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap_s"
+            android:background="@drawable/clay_inset"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/gap_s">
+
+            <ImageView
+                android:id="@+id/how_to_icon_three"
+                android:layout_width="@dimen/sprite_rule"
+                android:layout_height="@dimen/sprite_rule"
+                android:contentDescription="@string/cd_feather"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sprite_puddle" />
+
+            <TextView
+                android:id="@+id/how_to_text_three"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/gap_s"
+                android:layout_weight="1"
+                android:text="@string/how_to_rule_three"
+                android:textAppearance="@style/TextAppearance.App.Label"
+                android:textColor="@color/ink"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/how_to_close"
+            style="@style/Widget.App.Button.Secondary"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_secondary_h"
+            android:layout_marginTop="@dimen/gap_m"
+            android:text="@string/btn_got_it" />
+
+    </com.poultrypathsprint.arcade.core.ui.ClayPanelView>
+
+</RelativeLayout>

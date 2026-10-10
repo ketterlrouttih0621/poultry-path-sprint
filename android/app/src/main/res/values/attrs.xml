@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StatCardView">
+        <attr name="appValue" format="string" />
+        <attr name="appLabel" format="string" />
+        <attr name="appAccent" format="color" />
+    </declare-styleable>
+    <declare-styleable name="ClayPanelView">
+        <attr name="appPanelTitle" format="string" />
+        <attr name="appPanelTint" format="color" />
+        <attr name="appPanelPadding" format="dimension" />
+    </declare-styleable>
+</resources>

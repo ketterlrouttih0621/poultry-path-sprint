@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/outfit_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/gap_xs"
+    android:background="@drawable/clay_pill"
+    android:gravity="center_vertical"
+    android:minHeight="@dimen/outfit_row_height"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/gap_s"
+    android:paddingTop="@dimen/gap_xs"
+    android:paddingEnd="@dimen/gap_s"
+    android:paddingBottom="@dimen/gap_xs">
+
+    <ImageView
+        android:id="@+id/outfit_icon"
+        android:layout_width="@dimen/sprite_outfit"
+        android:layout_height="@dimen/sprite_outfit"
+        android:contentDescription="@string/cd_outfit"
+        android:scaleType="fitCenter"
+        android:src="@drawable/sprite_outfit_set" />
+
+    <LinearLayout
+        android:id="@+id/outfit_text_block"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/gap_s"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/outfit_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.App.Section"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/outfit_cost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.App.Label"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/outfit_action"
+        style="@style/Widget.App.Button.Secondary"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/touch_min"
+        android:minWidth="92dp"
+        android:paddingStart="@dimen/gap_s"
+        android:paddingEnd="@dimen/gap_s"
+        app:cornerRadius="18dp" />
+
+</LinearLayout>

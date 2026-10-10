@@ -1,0 +1,16 @@
+{
+  "assets": [
+    {"name":"icon_1024","type":"icon","prompt":"App icon, one single glossy 3D cartoon white hen head facing forward with a red comb and orange beak, centered, warm orange radial gradient background, crisp, no text, no scene"},
+    {"name":"bg_splash","type":"bg","prompt":"Vertical 9:16 mobile game loader background, warm sunrise over a cartoon country field, pumpkin orange and corn yellow sky, soft rolling hills, cinematic, no text, no UI elements"},
+    {"name":"bg_menu","type":"bg","prompt":"Vertical 9:16 mobile game menu background, bright cartoon farm map seen from above, red barns, green hedgerows, winding dirt roads, cream and sage palette, vibrant 3D render, no text, no UI elements"},
+    {"name":"bg_game","type":"bg","prompt":"Vertical 9:16 mobile game background, softly blurred cartoon farmland, low contrast for UI overlay, pale cream and sage, no text, no UI elements"},
+    {"name":"sprite_hen_runner","type":"sprite","prompt":"One single cute cartoon white hen mid-stride running, side-front view, red comb, orange beak, glossy 3D render, centered icon, isolated on plain white, no other objects"},
+    {"name":"sprite_wagon","type":"sprite","prompt":"One single cartoon wooden hay wagon loaded with golden hay, side view, glossy 3D render, centered icon, isolated on plain white, no other objects"},
+    {"name":"sprite_train","type":"sprite","prompt":"One single cartoon green grain train locomotive, side view, glossy 3D render, centered icon, isolated on plain white, no other objects"},
+    {"name":"sprite_feather","type":"sprite","prompt":"One single cartoon golden feather, centered icon, glossy 3D render, isolated on plain white, no other objects"},
+    {"name":"sprite_puddle","type":"sprite","prompt":"One single cartoon brown mud puddle seen from above, glossy 3D render, centered icon, isolated on plain white, no other objects"},
+    {"name":"sprite_gate","type":"sprite","prompt":"One single cartoon red-orange wooden farm gate, front view, glossy 3D render, centered icon, isolated on plain white, no other objects"},
+    {"name":"sprite_barn","type":"sprite","prompt":"One single cartoon red barn with a sage green roof, front view, glossy 3D render, centered icon, isolated on plain white, no other objects"},
+    {"name":"sprite_outfit_set","type":"sprite","prompt":"One single cartoon straw hat with a yellow ribbon, centered icon, glossy 3D render, isolated on plain white, no other objects"}
+  ]
+}

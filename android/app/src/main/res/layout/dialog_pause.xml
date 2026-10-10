@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pause_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/gutter">
+
+    <com.poultrypathsprint.arcade.core.ui.ClayPanelView
+        android:id="@+id/pause_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:appPanelTitle="@string/dialog_pause_title">
+
+        <LinearLayout
+            android:id="@+id/pause_stats_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <com.poultrypathsprint.arcade.core.ui.StatCardView
+                android:id="@+id/pause_stat_metres"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:appAccent="@color/pumpkin"
+                app:appLabel="@string/label_metres" />
+
+            <com.poultrypathsprint.arcade.core.ui.StatCardView
+                android:id="@+id/pause_stat_feathers"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/gap_xs"
+                android:layout_weight="1"
+                app:appAccent="@color/corn_deep"
+                app:appLabel="@string/label_feathers" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/pause_resume_wrap"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_primary_h"
+            android:layout_marginTop="@dimen/gap_m"
+            android:background="@drawable/clay_button_primary">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/pause_resume"
+                style="@style/Widget.App.Button.Primary"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/btn_face_inset"
+                android:text="@string/btn_resume" />
+
+        </FrameLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/pause_menu"
+            style="@style/Widget.App.Button.Ghost"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_ghost_h"
+            android:layout_marginTop="@dimen/gap_s"
+            android:text="@string/btn_menu" />
+
+    </com.poultrypathsprint.arcade.core.ui.ClayPanelView>
+
+</RelativeLayout>

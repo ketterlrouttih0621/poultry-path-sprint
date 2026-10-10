@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/game_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_game_gradient">
+
+    <ImageView
+        android:id="@+id/game_art"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.35"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_game"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.poultrypathsprint.arcade.core.ui.LaneBoardView
+        android:id="@+id/game_board"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/cd_board"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_header" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/game_header"
+        style="@style/Widget.App.Card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/surface_sheet"
+        app:cardElevation="6dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.App.Header">
+
+        <LinearLayout
+            android:id="@+id/game_header_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/gap_s"
+            android:paddingTop="@dimen/status_pad"
+            android:paddingEnd="@dimen/gap_m"
+            android:paddingBottom="@dimen/gap_s">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/game_pause"
+                style="@style/Widget.App.IconButton"
+                android:layout_width="@dimen/icon_button"
+                android:layout_height="@dimen/icon_button"
+                android:contentDescription="@string/cd_pause"
+                app:backgroundTint="@color/sand_muted"
+                app:cornerRadius="16dp"
+                app:icon="@drawable/ic_arrow_back_vector" />
+
+            <LinearLayout
+                android:id="@+id/game_distance_block"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/game_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:accessibilityLiveRegion="polite"
+                    android:textAppearance="@style/TextAppearance.App.Numeric"
+                    android:textColor="@color/pumpkin"
+                    android:textSize="28sp" />
+
+                <TextView
+                    android:id="@+id/game_distance_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_metres"
+                    android:textAppearance="@style/TextAppearance.App.Label"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/game_feather_block"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/touch_min"
+                android:background="@drawable/clay_inset"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/gap_s"
+                android:paddingEnd="@dimen/gap_s">
+
+                <ImageView
+                    android:id="@+id/game_feather_icon"
+                    android:layout_width="@dimen/sprite_feather_small"
+                    android:layout_height="@dimen/sprite_feather_small"
+                    android:importantForAccessibility="no"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/sprite_feather" />
+
+                <TextView
+                    android:id="@+id/game_feathers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/gap_xs"
+                    android:accessibilityLiveRegion="polite"
+                    android:contentDescription="@string/cd_feather_badge"
+                    android:textAppearance="@style/TextAppearance.App.Numeric"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/game_banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_l"
+        android:accessibilityLiveRegion="polite"
+        android:background="@drawable/clay_inset"
+        android:paddingStart="@dimen/gap_l"
+        android:paddingTop="@dimen/gap_s"
+        android:paddingEnd="@dimen/gap_l"
+        android:paddingBottom="@dimen/gap_s"
+        android:text="@string/game_get_set"
+        android:textAppearance="@style/TextAppearance.App.Label"
+        android:textColor="@color/ink"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_header" />
+
+    <LinearLayout
+        android:id="@+id/game_empty_panel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/gutter_wide"
+        android:layout_marginEnd="@dimen/gutter_wide"
+        android:background="@drawable/clay_inset"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/gap_l"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/game_board"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/game_board">
+
+        <TextView
+            android:id="@+id/game_empty_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/game_road_repair"
+            android:textAppearance="@style/TextAppearance.App.Section" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/game_empty_menu"
+            style="@style/Widget.App.Button.Ghost"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/btn_ghost_h"
+            android:layout_marginTop="@dimen/gap_m"
+            android:text="@string/btn_menu" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/game_controls"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/control_bar_height"
+        android:layout_marginStart="@dimen/gutter"
+        android:layout_marginEnd="@dimen/gutter"
+        android:layout_marginBottom="@dimen/control_bar_margin"
+        android:background="@drawable/clay_card"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/gap_s"
+        android:paddingEnd="@dimen/gap_s"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/game_lane_left"
+            style="@style/Widget.App.Button.Lane"
+            android:layout_width="@dimen/lane_button"
+            android:layout_height="@dimen/lane_button"
+            android:contentDescription="@string/cd_lane_left"
+            app:icon="@drawable/ic_lane_left" />
+
+        <FrameLayout
+            android:id="@+id/game_hop_wrap"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btn_primary_h"
+            android:layout_marginStart="@dimen/gap_s"
+            android:layout_marginEnd="@dimen/gap_s"
+            android:layout_weight="1"
+            android:background="@drawable/clay_button_primary">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/game_hop"
+                style="@style/Widget.App.Button.Primary"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/btn_face_inset"
+                android:contentDescription="@string/cd_hop"
+                android:text="@string/btn_hop" />
+
+        </FrameLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/game_lane_right"
+            style="@style/Widget.App.Button.Lane"
+            android:layout_width="@dimen/lane_button"
+            android:layout_height="@dimen/lane_button"
+            android:contentDescription="@string/cd_lane_right"
+            app:icon="@drawable/ic_lane_right" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

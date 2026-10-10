@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/settings_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/gutter">
+
+    <com.poultrypathsprint.arcade.core.ui.ClayPanelView
+        android:id="@+id/settings_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:appPanelTitle="@string/dialog_settings_title">
+
+        <LinearLayout
+            android:id="@+id/settings_row_sound"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/touch_min"
+            android:background="@drawable/clay_inset"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/gap_m"
+            android:paddingEnd="@dimen/gap_s">
+
+            <TextView
+                android:id="@+id/settings_label_sound"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/setting_sound"
+                android:textAppearance="@style/TextAppearance.App.Label"
+                android:textColor="@color/ink"
+                android:textSize="13sp" />
+
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/settings_switch_sound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/setting_sound" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/settings_row_shake"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/touch_min"
+            android:layout_marginTop="@dimen/gap_xs"
+            android:background="@drawable/clay_inset"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/gap_m"
+            android:paddingEnd="@dimen/gap_s">
+
+            <TextView
+                android:id="@+id/settings_label_shake"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/setting_shake"
+                android:textAppearance="@style/TextAppearance.App.Label"
+                android:textColor="@color/ink"
+                android:textSize="13sp" />
+
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/settings_switch_shake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/setting_shake" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/settings_row_contrast"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/touch_min"
+            android:layout_marginTop="@dimen/gap_xs"
+            android:background="@drawable/clay_inset"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/gap_m"
+            android:paddingEnd="@dimen/gap_s">
+
+            <TextView
+                android:id="@+id/settings_label_contrast"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/setting_contrast"
+                android:textAppearance="@style/TextAppearance.App.Label"
+                android:textColor="@color/ink"
+                android:textSize="13sp" />
+
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/settings_switch_contrast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/setting_contrast" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/settings_label_sensitivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap_m"
+            android:text="@string/setting_sensitivity"
+            android:textAppearance="@style/TextAppearance.App.Label" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/settings_sensitivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/setting_sensitivity"
+            android:stepSize="1.0"
+            android:value="2.0"
+            android:valueFrom="1.0"
+            android:valueTo="3.0"
+            app:thumbColor="@color/pumpkin"
+            app:trackColorActive="@color/pumpkin_light"
+            app:trackColorInactive="@color/sand_muted" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/settings_reset"
+            style="@style/Widget.App.Button.Ghost"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_ghost_h"
+            android:layout_marginTop="@dimen/gap_s"
+            android:text="@string/btn_reset_progress" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/settings_close"
+            style="@style/Widget.App.Button.Secondary"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_secondary_h"
+            android:layout_marginTop="@dimen/gap_s"
+            android:text="@string/btn_close" />
+
+        <TextView
+            android:id="@+id/settings_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap_s"
+            android:gravity="center"
+            android:text="@string/settings_version"
+            android:textAppearance="@style/TextAppearance.App.Label"
+            android:textColor="@color/ink_faint"
+            android:textSize="11sp" />
+
+    </com.poultrypathsprint.arcade.core.ui.ClayPanelView>
+
+</RelativeLayout>

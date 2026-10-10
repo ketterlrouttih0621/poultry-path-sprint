@@ -1,0 +1,10 @@
+{
+  "attempts": [
+    {
+      "stage": "test-ui",
+      "raw_stage": "ui-test",
+      "status": "SUCCESS_WITH_WARNINGS",
+      "at_epoch": 1791624263
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/result_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_result_gradient">
+
+    <ImageView
+        android:id="@+id/result_art"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.22"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/result_scrim"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/scrim_menu_art"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/result_scroll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/result_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/gutter_wide"
+            android:paddingTop="@dimen/status_pad"
+            android:paddingEnd="@dimen/gutter_wide"
+            android:paddingBottom="@dimen/gap_xl">
+
+            <TextView
+                android:id="@+id/result_verdict"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap_m"
+                android:accessibilityLiveRegion="polite"
+                android:text="@string/result_nice"
+                android:textAppearance="@style/TextAppearance.App.Hero"
+                android:textColor="@color/pumpkin" />
+
+            <TextView
+                android:id="@+id/result_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap_xs"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.App.Label" />
+
+            <FrameLayout
+                android:id="@+id/result_hen_halo"
+                android:layout_width="@dimen/result_hen"
+                android:layout_height="@dimen/result_hen"
+                android:layout_marginTop="@dimen/gap_m">
+
+                <ImageView
+                    android:id="@+id/result_hen"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/cd_hen"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/sprite_hen_runner" />
+
+            </FrameLayout>
+
+            <com.poultrypathsprint.arcade.core.ui.ClayPanelView
+                android:id="@+id/result_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap_m">
+
+                <LinearLayout
+                    android:id="@+id/result_stats_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <com.poultrypathsprint.arcade.core.ui.StatCardView
+                        android:id="@+id/result_stat_metres"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:appAccent="@color/pumpkin"
+                        app:appLabel="@string/label_metres" />
+
+                    <com.poultrypathsprint.arcade.core.ui.StatCardView
+                        android:id="@+id/result_stat_feathers"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/gap_xs"
+                        android:layout_weight="1"
+                        app:appAccent="@color/corn_deep"
+                        app:appLabel="@string/label_feathers" />
+
+                    <com.poultrypathsprint.arcade.core.ui.StatCardView
+                        android:id="@+id/result_stat_barns"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/gap_xs"
+                        android:layout_weight="1"
+                        app:appAccent="@color/sage"
+                        app:appLabel="@string/label_barns" />
+
+                </LinearLayout>
+
+            </com.poultrypathsprint.arcade.core.ui.ClayPanelView>
+
+            <TextView
+                android:id="@+id/result_best_pill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap_m"
+                android:background="@drawable/clay_inset"
+                android:paddingStart="@dimen/gap_m"
+                android:paddingTop="@dimen/gap_xs"
+                android:paddingEnd="@dimen/gap_m"
+                android:paddingBottom="@dimen/gap_xs"
+                android:textAppearance="@style/TextAppearance.App.Label"
+                android:textColor="@color/ink"
+                android:textSize="13sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/result_unlock_banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap_m"
+                android:background="@drawable/clay_inset"
+                android:backgroundTint="@color/sage_tint"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/gap_s"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/result_unlock_icon"
+                    android:layout_width="@dimen/sprite_unlock"
+                    android:layout_height="@dimen/sprite_unlock"
+                    android:contentDescription="@string/cd_outfit"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/sprite_outfit_set" />
+
+                <TextView
+                    android:id="@+id/result_unlock_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/gap_s"
+                    android:layout_weight="1"
+                    android:textAppearance="@style/TextAppearance.App.Label"
+                    android:textColor="@color/sage_deep"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/result_hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap_l"
+                android:gravity="center"
+                android:text="@string/result_hint"
+                android:textAppearance="@style/TextAppearance.App.Label" />
+
+            <FrameLayout
+                android:id="@+id/result_again_wrap"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_primary_h"
+                android:layout_marginTop="@dimen/gap_s"
+                android:background="@drawable/clay_button_primary">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/result_again"
+                    style="@style/Widget.App.Button.Primary"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/btn_face_inset"
+                    android:text="@string/btn_run_again"
+                    app:icon="@drawable/ic_boot" />
+
+            </FrameLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/result_menu"
+                style="@style/Widget.App.Button.Ghost"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_ghost_h"
+                android:layout_marginTop="@dimen/gap_s"
+                android:text="@string/btn_menu" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

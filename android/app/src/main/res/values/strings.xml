@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Poultry Path Sprint</string>
+
+    <string name="splash_title_top">POULTRY PATH</string>
+    <string name="splash_title_bottom">SPRINT</string>
+    <string name="splash_tagline">CROSS THE COUNTRY ROAD</string>
+    <string name="splash_status_one">WARMING UP THE COOP</string>
+    <string name="splash_status_two">PAVING THE ROAD</string>
+    <string name="splash_status_three">READY TO RUN</string>
+    <string name="splash_footer">FARMYARD ARCADE · OFFLINE</string>
+
+    <string name="menu_title">POULTRY PATH SPRINT</string>
+    <string name="menu_tagline">TAP TO HOP · SWIPE TO SWITCH LANES</string>
+    <string name="btn_play">PLAY</string>
+    <string name="btn_outfit_coop">OUTFIT COOP</string>
+    <string name="btn_how_to">HOW TO RUN</string>
+
+    <string name="label_best_metres">BEST METRES</string>
+    <string name="label_feathers">FEATHERS</string>
+    <string name="label_metres">METRES</string>
+    <string name="label_barns">BARNS</string>
+
+    <string name="game_get_set">GET SET</string>
+    <string name="game_road_repair">ROAD UNDER REPAIR</string>
+    <string name="game_checkpoint">CHECKPOINT</string>
+    <string name="btn_hop">HOP</string>
+    <string name="btn_menu">MENU</string>
+
+    <string name="result_nice">NICE RUN!</string>
+    <string name="result_best">NEW BEST!</string>
+    <string name="result_hint">SWITCH LANES EARLY TO BEAT THE TRAIN</string>
+    <string name="btn_run_again">RUN AGAIN</string>
+    <string name="result_best_pill">BEST %1$d M</string>
+    <string name="result_unlock">%1$s UNLOCKED</string>
+
+    <string name="dialog_outfit_title">OUTFIT COOP</string>
+    <string name="dialog_outfit_empty">THE COOP IS EMPTY</string>
+    <string name="dialog_settings_title">SETTINGS</string>
+    <string name="dialog_pause_title">RUN PAUSED</string>
+    <string name="dialog_how_to_title">HOW TO RUN</string>
+    <string name="btn_close">CLOSE</string>
+    <string name="btn_got_it">GOT IT</string>
+    <string name="btn_resume">RESUME</string>
+    <string name="btn_wear">WEAR</string>
+    <string name="btn_unlock">UNLOCK</string>
+    <string name="btn_worn">WORN</string>
+    <string name="btn_reset_progress">RESET PROGRESS</string>
+    <string name="outfit_cost">%1$d FEATHERS</string>
+    <string name="outfit_free">FARMYARD STANDARD</string>
+
+    <string name="setting_sound">SOUND CUES</string>
+    <string name="setting_shake">SCREEN SHAKE</string>
+    <string name="setting_contrast">HIGH CONTRAST LANES</string>
+    <string name="setting_sensitivity">HOP SENSITIVITY</string>
+    <string name="settings_version">VERSION 1.0 · OFFLINE BUILD</string>
+
+    <string name="how_to_rule_one">WAGONS ROLL BOTH WAYS</string>
+    <string name="how_to_rule_two">THE TRAIN WHISTLES BEFORE IT RUNS</string>
+    <string name="how_to_rule_three">MUD ONLY SLOWS YOU DOWN</string>
+
+    <string name="cd_hen">Farm hen runner</string>
+    <string name="cd_feather_badge">Feathers collected</string>
+    <string name="cd_feather">Golden feather</string>
+    <string name="cd_settings">Open settings</string>
+    <string name="cd_pause">Pause the run</string>
+    <string name="cd_lane_left">Move one lane left</string>
+    <string name="cd_lane_right">Move one lane right</string>
+    <string name="cd_hop">Hop forward</string>
+    <string name="cd_wagon">Hay wagon</string>
+    <string name="cd_train">Grain train</string>
+    <string name="cd_outfit">Outfit preview</string>
+    <string name="cd_board">Country road board</string>
+
+    <string name="state_on">On</string>
+    <string name="state_off">Off</string>
+    <string name="state_worn">Worn</string>
+    <string name="state_ready">Ready to unlock</string>
+    <string name="state_locked">Locked, needs %1$d feathers</string>
+    <string name="state_hop">Lane %1$d of 3, %2$d metres</string>
+    <string name="announce_stun">Stuck in the mud</string>
+    <string name="metres_value">%1$d</string>
+    <string name="feathers_value">%1$d</string>
+</resources>

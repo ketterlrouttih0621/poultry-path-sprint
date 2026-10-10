@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextAppearance.App.Hero" parent="TextAppearance.Material3.DisplaySmall">
+        <item name="android:textSize">40sp</item>
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:textColor">@color/ink</item>
+    </style>
+
+    <style name="TextAppearance.App.Title" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="android:textSize">26sp</item>
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textColor">@color/ink</item>
+    </style>
+
+    <style name="TextAppearance.App.Section" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/ink</item>
+    </style>
+
+    <style name="TextAppearance.App.Numeric" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:textColor">@color/ink</item>
+    </style>
+
+    <style name="TextAppearance.App.Body" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/ink_soft</item>
+    </style>
+
+    <style name="TextAppearance.App.Label" parent="TextAppearance.Material3.LabelMedium">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">0.08</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/ink_soft</item>
+    </style>
+
+    <style name="TextAppearance.App.Buttons" parent="TextAppearance.Material3.LabelLarge">
+        <item name="android:textSize">17sp</item>
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:letterSpacing">0.09</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="Widget.App.Button.Primary" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="rippleColor">@color/white_glass</item>
+        <item name="cornerRadius">@dimen/radius_button</item>
+        <item name="elevation">0dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:minHeight">@dimen/touch_min</item>
+        <item name="android:textAppearance">@style/TextAppearance.App.Buttons</item>
+        <item name="android:textColor">@color/on_pumpkin</item>
+        <item name="iconTint">@color/on_pumpkin</item>
+        <item name="iconSize">@dimen/icon_size</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconPadding">@dimen/gap_s</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Widget.App.Button.Secondary" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/sage</item>
+        <item name="rippleColor">@color/white_glass</item>
+        <item name="cornerRadius">22dp</item>
+        <item name="elevation">4dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:minHeight">@dimen/btn_secondary_h</item>
+        <item name="android:textAppearance">@style/TextAppearance.App.Buttons</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white_soft</item>
+        <item name="iconTint">@color/white_soft</item>
+        <item name="iconSize">@dimen/icon_size</item>
+        <item name="iconGravity">textStart</item>
+    </style>
+
+    <style name="Widget.App.Button.Ghost" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">@color/sage</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="rippleColor">@color/sage_tint</item>
+        <item name="cornerRadius">22dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:minHeight">@dimen/btn_ghost_h</item>
+        <item name="android:textAppearance">@style/TextAppearance.App.Buttons</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="iconTint">@color/sage_deep</item>
+    </style>
+
+    <style name="Widget.App.Button.Lane" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/sage</item>
+        <item name="rippleColor">@color/white_glass</item>
+        <item name="cornerRadius">20dp</item>
+        <item name="elevation">4dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="iconTint">@color/white_soft</item>
+        <item name="iconSize">28dp</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconPadding">0dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Widget.App.IconButton" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/sand_muted</item>
+        <item name="iconTint">@color/ink</item>
+        <item name="iconSize">@dimen/icon_size</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconPadding">0dp</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="elevation">0dp</item>
+        <item name="rippleColor">@color/ink_hairline</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minWidth">@dimen/touch_min</item>
+        <item name="android:minHeight">@dimen/touch_min</item>
+    </style>
+
+    <style name="Widget.App.Card" parent="Widget.Material3.CardView.Filled">
+        <item name="cardCornerRadius">@dimen/radius_card</item>
+        <item name="cardElevation">0dp</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="cardBackgroundColor">@color/surface_card</item>
+    </style>
+
+    <style name="ShapeAppearance.App.Sheet" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">@dimen/radius_sheet</item>
+        <item name="cornerSizeTopRight">@dimen/radius_sheet</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+
+    <style name="ShapeAppearance.App.Header" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeTopRight">0dp</item>
+        <item name="cornerSizeBottomLeft">@dimen/radius_card</item>
+        <item name="cornerSizeBottomRight">@dimen/radius_card</item>
+    </style>
+
+    <style name="Animation.App.Dialog" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/dialog_pop_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_fade_out</item>
+    </style>
+
+    <style name="Theme.PoultryPathSprint.Dialog" parent="Theme.Material3.Light.Dialog">
+        <item name="android:windowAnimationStyle">@style/Animation.App.Dialog</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimAmount">0.45</item>
+        <item name="colorPrimary">@color/pumpkin</item>
+        <item name="colorOnPrimary">@color/on_pumpkin</item>
+        <item name="colorSecondary">@color/sage</item>
+        <item name="colorSurface">@color/surface_sheet</item>
+        <item name="colorOnSurface">@color/ink</item>
+        <item name="materialButtonStyle">@style/Widget.App.Button.Secondary</item>
+    </style>
+</resources>
